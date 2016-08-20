@@ -14,9 +14,11 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>	
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+
 
 	<script type="text/javascript" src="/js/slow_scroll.js"></script>
+	<!--<script type="text/javascript" src="/js/mailhelp.js"></script>-->
 </head>
 <body >
 	<div id="contactus" class="contactForm">
@@ -43,14 +45,14 @@
 			<div class="row">
 				<div class="col-md-6">
 
-					<div class="form-group">
-						<form enctype="text/plain" method="get" action="mailto:jralzaibar@gmail.com">
-						<input type="text" class="form-control voffset3" id="usr" placeholder="Name">
-						<input type="text" class="form-control voffset3" id="email" placeholder="Email">
-						<input type="text" class="form-control voffset3" id="phone" placeholder="Phone">
-						<input type="text" class="form-control voffset3" id="address" placeholder="Address">
-						<textarea class="form-control voffset3" rows="5" id="comment" placeholder="Message">Message</textarea>
-						<input type="submit" class="btn btn-primary form-control voffset3 white-text" value="MAKE AN APPOINTMENT">
+					<div  class="form-group">
+						<form class="contact" name="contact" method="post" action="process.php">
+						<input type="text" class="form-control voffset3" name="name" placeholder="Name">
+						<input type="text" class="form-control voffset3" name="email" placeholder="Email">
+						<input type="text" class="form-control voffset3" name="phone" placeholder="Phone">
+						<input type="text" class="form-control voffset3" name="address" placeholder="Address">
+						<textarea class="form-control voffset3" rows="5" name="message" placeholder="Message">Message</textarea>
+						<input id="submit" type="submit" class="btn btn-primary form-control voffset3 white-text" value="MAKE AN APPOINTMENT">
 						</form>
 					</div>
 
