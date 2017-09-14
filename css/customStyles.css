@@ -33,3 +33,7 @@
 .blue-header{ color: #0D203C;}
 
 .footer{background-color: black;}
+
+#embedded-map-display{
+	text-align: center;
+}
